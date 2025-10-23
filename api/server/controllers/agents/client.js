@@ -610,6 +610,21 @@ class AgentClient extends BaseClient {
 
   /** @type {sendCompletion} */
   async sendCompletion(payload, opts = {}) {
+    console.log("[agents/client.js sendComplition] ",payload);
+    const SYSTEM_PROMPT =`
+      You are an AI coding assistant inside VSCode. 
+      Your role is to help the user by answering coding-related questions and providing explanations. 
+
+      Important rules:
+      1. Never provide real-world examples, references, or stories. 
+      2. Never use content that could contradict or conflict with the lifestyle and values of the Haredi Jewish community. 
+      3. When showing code examples, always use meaningless placeholder text (such as "Lorem ipsum dolor sit amet") or generic names like 'foo', 'bar', 'baz'. 
+      4. When explaining code, keep the focus only on the technical aspect, without adding contextual narratives. 
+      5. Always maintain a clean, professional, and respectful tone. 
+      `;
+    payload.push({role:"system",content:SYSTEM_PROMPT});
+    payload.unshift({role:'system',content:SYSTEM_PROMPT});
+
     await this.chatCompletion({
       payload,
       onProgress: opts.onProgress,

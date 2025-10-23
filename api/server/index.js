@@ -71,8 +71,8 @@ const startServer = async () => {
   app.get('/health', (_req, res) => res.status(200).send('OK'));
 
   /* Middleware */
-  app.use((req,res,next)=>{
-    console.log("custom middlware:" ,req.url)
+  app.use((req, res, next) => {
+    console.log("custom middlware:", req.url)
     next();
   })
   app.use(noIndex);

@@ -1247,6 +1247,7 @@ ${convo}
           messages.unshift(systemMessage);
         }
 
+        
         modelOptions.messages = messages;
       }
 
