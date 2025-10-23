@@ -2815,3 +2815,7 @@ html {
 .sharepoint-picker-bg{
   background-color: #F5F5F5;
 }
+
+pre{
+  direction: ltr;
+}
