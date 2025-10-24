@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גן חיות - דף הבית</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            color: #333;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #00897b;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        .animal-card {
+            transition: transform 0.3s;
+        }
+
+        .animal-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #00897b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <h1>ברוכים הבאים לגן החיות שלנו</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#animals"><i class="fas fa-paw"></i> חיות</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> עלינו</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#visit"><i class="fas fa-calendar-alt"></i> ביקור</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews"><i class="fas fa-star"></i> המלצות</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> צור קשר</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-4">
+        <section id="animals">
+            <h2>החיות שלנו</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card animal-card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">חיה 1</h5>
+                            <p class="card-text">לורם איפסאם דולור סיט אמט...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card animal-card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">חיה 2</h5>
+                            <p class="card-text">לורם איפסאם דולור סיט אמט...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card animal-card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">חיה 3</h5>
+                            <p class="card-text">לורם איפסאם דולור סיט אמט...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>עלינו</h2>
+            <p>לורם איפסאם דולור סיט אמט - מידע על גן החיות שלנו.</p>
+        </section>
+        
+        <section id="visit">
+            <h2>מידע על ביקור</h2>
+            <p>לורם איפסאם דולור סיט אמט - שעות פתיחה ומחירים.</p>
+        </section>
+
+        <section id="reviews">
+            <h2>המלצות מבקרים</h2>
+            <div class="mb-3">
+                <h5>מבקר 1</h5>
+                <p>לורם איפסאם דולור סיט אמט - חוויה מדהימה!</p>
+            </div>
+            <div class="mb-3">
+                <h5>מבקר 2</h5>
+                <p>לורם איפסאם דולור סיט אמט - הייתי שוב ושוב!</p>
+            </div>
+            <div class="mb-3">
+                <h5>מבקר 3</h5>
+                <p>לורם איפסאם דולור סיט אמט - מקום מדהים לחוויות משפחתיות!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>צור קשר</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="שם מלא" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="אימייל" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="הודעה" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">שלח</button>
+            </form>
+        </section>
+
+        <section id="map">
+            <h2>מפת גן החיות</h2>
+            <div style="height: 300px; background-color: #dcdcdc; margin-top: 20px;"></div>
+            <p>מפה מדומיינת של גן החיות... (כאן תוכל להוסיף מפה אמיתית)</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 גן החיות שלנו. כל הזכויות שמורות.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

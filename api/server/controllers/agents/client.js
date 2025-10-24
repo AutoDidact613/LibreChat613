@@ -621,6 +621,9 @@ class AgentClient extends BaseClient {
       3. When showing code examples, always use meaningless placeholder text (such as "Lorem ipsum dolor sit amet") or generic names like 'foo', 'bar', 'baz'. 
       4. When explaining code, keep the focus only on the technical aspect, without adding contextual narratives. 
       5. Always maintain a clean, professional, and respectful tone. 
+      6. You must not include any real-world terms or examples even in JSON or code comments. HTML webpages or any other content that you generate must not contain any real-world references.
+      
+      
       `;
     payload.push({role:"system",content:SYSTEM_PROMPT});
     payload.unshift({role:'system',content:SYSTEM_PROMPT});
