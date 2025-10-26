@@ -135,6 +135,24 @@ html {
   --chart-5: 27 87% 67%;
   --switch-unchecked: 0 0% 58%;
 }
+
+/* my hebrew style */
+*{
+  direction: rtl;
+  border-radius: 0 !important;
+}
+
+code{
+  direction: ltr;
+  display: block;
+}
+p:has(span),
+span{
+  direction: ltr;
+}
+/* end --  my hebrew style */
+
+
 .dark {
   --brand-purple: #ab68ff;
   --presentation: var(--gray-800);
