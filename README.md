@@ -3,7 +3,7 @@
     <img src="client/public/assets/logo.png" height="256">
   </a>
   <h1 align="center">
-    <a href="https://librechat.ai">LibreChat</a>
+    <a href="https://librechat.ai">AI613</a>
   </h1>
 </p>
 

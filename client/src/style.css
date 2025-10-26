@@ -18,7 +18,7 @@
   --gray-800: #212121;
   --gray-850: #171717;
   --gray-900: #0d0d0d;
-  --green-50: #ecfdf5;
+  /* --green-50: #ecfdf5;
   --green-100: #d1fae5;
   --green-200: #a7f3d0;
   --green-300: #6ee7b7;
@@ -28,7 +28,19 @@
   --green-700: #047857;
   --green-800: #065f46;
   --green-900: #064e3b;
-  --green-950: #022c22;
+  --green-950: #022c22; */
+  /* כחול */
+    --green-50:  #eaf2fb;
+  --green-100: #c8dbf2;
+  --green-200: #9ebfe8;
+  --green-300: #74a3de;
+  --green-400: #4b88d4;
+  --green-500: #1E5994; /* בינוני – צבע עיקרי */
+  --green-600: #184c86;
+  --green-700: #123f77;
+  --green-800: #0c3168;
+  --green-900: #08306F; /* כהה */
+  --green-950: #002060; /* הכי כהה */
   --red-50: #fef2f2;
   --red-100: #fee2e2;
   --red-200: #fecaca;
