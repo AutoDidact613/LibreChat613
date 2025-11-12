@@ -40,6 +40,7 @@ function Footer({ startupConfig }: { startupConfig: TStartupConfig | null | unde
       {termsOfServiceRender}
     </div>
   );
+
 }
 
 export default Footer;

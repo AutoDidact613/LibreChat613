@@ -3,6 +3,13 @@
 # Base node image
 FROM node:20-alpine AS node
 
+# Fix CA certificates FIRST
+RUN apk update && \
+    apk add --no-cache ca-certificates wget && \
+    wget -q -O /tmp/cacert.pem https://curl.se/ca/cacert.pem && \
+    mv /tmp/cacert.pem /usr/local/share/ca-certificates/cacert.crt && \
+    update-ca-certificates
+
 # Install jemalloc
 RUN apk add --no-cache jemalloc
 RUN apk add --no-cache python3 py3-pip uv
@@ -48,10 +55,3 @@ RUN \
 EXPOSE 3080
 ENV HOST=0.0.0.0
 CMD ["npm", "run", "backend"]
-
-# Optional: for client with nginx routing
-# FROM nginx:stable-alpine AS nginx-client
-# WORKDIR /usr/share/nginx/html
-# COPY --from=node /app/client/dist /usr/share/nginx/html
-# COPY client/nginx.conf /etc/nginx/conf.d/default.conf
-# ENTRYPOINT ["nginx", "-g", "daemon off;"]

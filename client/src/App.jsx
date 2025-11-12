@@ -10,6 +10,7 @@ import { ScreenshotProvider, useApiErrorBoundary } from './hooks';
 import { getThemeFromEnv } from './utils/getThemeFromEnv';
 import { LiveAnnouncer } from '~/a11y';
 import { router } from './routes';
+import { useEffect } from 'react';
 
 const App = () => {
   const { setError } = useApiErrorBoundary();
@@ -70,5 +71,6 @@ export default () => (
         display: 'none',
       }}
     />
+
   </ScreenshotProvider>
 );
