@@ -142,7 +142,7 @@ html {
   border-radius: 0 !important;
 }
 
-code{
+pre code{
   direction: ltr;
   display: block;
 }
