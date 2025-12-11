@@ -72,9 +72,9 @@ const startServer = async () => {
 
   /* Middleware */
   app.use((req, res, next) => {
-    console.log("custom middlware:", req.url)
+    console.log('custom middlware:', req.url);
     next();
-  })
+  });
   app.use(noIndex);
   app.use(express.json({ limit: '3mb' }));
   app.use(express.urlencoded({ extended: true, limit: '3mb' }));
